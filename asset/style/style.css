@@ -20,7 +20,7 @@ header h1{
 
 /* Banner */
 .banner{
-    width: 99vw;
+    width: 99.1vw;
     max-height: 35vw;
 }
 
@@ -37,6 +37,7 @@ header h1{
     padding: 3px 15px;
     border: 1px solid black;
     text-align: center;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 .a-nav:hover{
