@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -38,6 +39,7 @@ header h1{
     border: 1px solid black;
     text-align: center;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    transition: 2s;
 }
 
 .a-nav:hover{
@@ -58,16 +60,25 @@ header h1{
 }
 
 
-/*articulo home*/
-.cuerpo{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    position: absolute;
+/* logo */
+
+.cuerpo-logo{
+    display: inline-block;
+    width: 20%;
 }
 
-.logo{
-    width: 20%;
+.cuerpo-logo img{
+    width: 80%;
+    position: relative;
+    left: 9%;
+}
+
+/* cuerpo home */
+
+.cuerpo-home{
+    display: inline-block;
+    margin-left: 2%;
+    margin-bottom: 10%;
 }
 
 .cuerpo-home>h3{
@@ -82,12 +93,28 @@ header h1{
 }
 
 .cuerpo-img-home{
-    width: 30%;
-    margin-left: 20%;
+    margin-left: 5%;
+    width: 35%;
+    display: inline-block;
+}
+
+.cuerpo-img-home img{
+    width: 80%;
+    margin-left: 15%;
+    position: relative;
+    left: 15%;
 }
 
 
-/* articulo about */ 
+/* cuerpo about */ 
+
+.cuerpo-about{
+    display: inline-block;
+    margin-left: 2%;
+    margin-bottom: 10%;
+    width: 45%;
+}
+
 .cuerpo-about>h3{
     margin-top: 2%;
     margin-left: 3%;
@@ -97,24 +124,42 @@ header h1{
 
 .cuerpo-about>p{
     text-indent: 5%;
-    margin-left: 10%;
+    margin-left: 5%;
     font-size: 25px;
 }
 
 .cuerpo-img-about{
     width: 30%;
-    margin-left: 1%;
+    display: inline-block;
 }
 
-/* articulo contact */
+.cuerpo-img-about img{
+    width: 95%;
+    margin-left: 5%;
+    position: relative;
+    left: 5%;
+}
+
+/* cuerpo contact */
+
+.cuerpo-contact{
+    display: inline-block;
+    width: 40%;
+}
 
 .cuerpo-contact p{
-    margin-top: 20%;
-    margin-left: 10%;
+    margin-top: 5%;
+    margin-left: 5%;
     font-size: 25px;
+    position: relative;
 }
 
 .cuerpo-img-contact{
-    width: 30%;
-    margin-left: 30%;
+    display: inline-block;
+    width: 35%;
+}
+
+.cuerpo-img-contact img{
+    width: 70%;
+    margin-left: 20%;
 }
