@@ -24,7 +24,6 @@
     width: 15%;
 }
 
-
 /* ---------------- titulo ---------------- */
 
 .container-header h1{
@@ -94,10 +93,31 @@
 
 .cuerpo-contact{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+.cuerpo-rules{
+    display: flex;
+}
+
+.cuerpo-rules h3{
+    margin: 3% 5%;
+}
+
+.cuerpo-rules p, li{
+    margin: 3% 9%;
+    text-align: justify;
+}
+
+.container-img{
+    width: 60%;
+    background-color: black;
+}
+.container-img img{
+    align-content: flex-end;
+    align-items: flex-end;
+    width: 80%;
 }
 
 /* ------------------ Fondos ------------------- */
@@ -273,4 +293,14 @@
     margin: 2%;
     color: red;
     text-decoration: none;
+}
+
+.foot-cont-img{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.foot-cont-img img{
+    
+    width: 80%;
 }
