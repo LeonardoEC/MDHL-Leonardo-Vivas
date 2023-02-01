@@ -1,3 +1,5 @@
+/* >>>>>>>>>>>>>>>> Genericos <<<<<<<<<<<<<<<<< */
+
 /* ---------- Normalizador ------------ */
 *{
     margin: 0;
@@ -5,23 +7,12 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
 /* ---------------- container-header ---------------- */
 
 .container-header{
     display: flex;
     flex-direction: column;
     background-color: black;
-}
-
-.container-header-about{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-}
-.container-header-about img{
-    width: 15%;
 }
 
 /* ---------------- titulo ---------------- */
@@ -31,13 +22,7 @@
     color: white;
     text-align: center;
     font-size: 50px;
-}
-
-/* -------------- Banner ---------------- */
-
-.banner{
-    width: 99.1vw;
-    max-height: 40vw;
+    color: yellow;
 }
 
 /* -------------- nav-bar -------------- */
@@ -55,11 +40,11 @@
     background-color: rgb(10, 98, 180);
     color: white;
     text-decoration: none;
-    padding: 3px 15px;
+    padding: 3px 10px;
     border: 1px solid black;
     text-align: center;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-    transition: 2s;
+    transition: 1s;
 }
 
 .a-nav:hover{
@@ -71,6 +56,13 @@
 }
 .activo:hover{
     background-color: rgb(96, 158, 4);
+}
+
+/* -------------- Banner ---------------- */
+
+.banner{
+    width: 99.1vw;
+    max-height: 40vw;
 }
 
 /* -------------------- subtitulo --------------- */
@@ -88,12 +80,178 @@
 }
 
 /* ------------------- Cuerpos ------------------ */
+
 .cuerpo{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+
+/* ------------------ Fondos ------------------- */
+
+.fondo-home{
+    background-image: url(../img/hockey_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo-about{
+    background-image: url(../img/hockey_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fondo-contact{
+    background-image: url(../img/hockey_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ------------------- logo ----------------- */
+
+.logo{
+    width: 250px;
+}
+
+.cuerpo-contact img{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 400px;
+}
+
+/*-------------------------- cuerpo carta ------------------*/
+
+.cuerpo-carta{
+    margin-right: 2%;
+    margin-bottom: 5%;
+    padding: 3%;
+    align-self: flex-end;
+    width: 40rem;
+    background-color: rgba(250, 235, 215, 0.747);
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.cuerpo-carta>h3{
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-size: 35px;
+}
+
+.cuerpo-carta>p{
+    margin-left: 10%;
+    font-size: 25px;
+}
+
+/* ------------------- footer -------------------- */
+
+
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+    border: 2px solid green;
+}
+
+.footer-nav{
+    border: 2px solid gold;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin-left: 2%;
+}
+
+.foot-cont-img{
+    border: 2px solid red;
+    width: 20%;
+
+}
+.foot-cont-img img{
+    position: relative;
+    left: 30%;
+    width: 40%;
+}
+
+.footer-redes{
+    width: 20%;
+    border: 2px solid blue;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.footer-redes h3{
+    padding: 5%;
+}
+
+.footer-redes a{
+    margin: 2%;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-redes a:hover{
+    font-weight: bold;
+    margin: 2%;
+    color: red;
+    text-decoration: none;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>> Paginas <<<<<<<<<<<<<<<<< */
+
+/* ----------------- about ----------------- */ 
+
+.container-header-about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.container-header-about img{
+    width: 15%;
+}
+
+
+.cuerpo-about{
+    margin-left: 10%;
+    margin-bottom: 3%;
+    width: 45%;
+}
+
+.cuerpo-about>h3{
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+    font-size: 30px;
+    text-shadow: 1px 2px #999;
+}
+
+.cuerpo-about>p{
+    text-indent: 5%;
+    margin-left: 5%;
+    font-size: 25px;
+    text-shadow: 1px 2px #999;
+}
+
+.cuerpo-img-about img{
+    width: 95%;
+    margin-left: 5%;
+    position: relative;
+    left: 5%;
+}
+
+/* ----------------- contact -------------- */
 
 .cuerpo-contact{
     display: flex;
@@ -102,6 +260,83 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+.cuerpo-contact h3{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 2%;
+    text-shadow: 1px 2px #999;
+}
+
+.cuerpo-contact p{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15%;
+    margin-top: 5%;
+    text-shadow: 1px 2px #999;
+}
+
+.mail{
+    width: 20%;
+}
+
+.mail img{
+    width: 20%;
+    margin-left: 40%;
+    opacity: 20%;
+}
+
+.mail img:hover{
+    width: 20%;
+    margin-left: 40%;
+    opacity: 100%;
+}
+
+/* game-info */
+
+.cuerpo-GI{
+    display: flex;
+    background-image: url(../img/design1_image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-GI{
+    align-items: flex-end;
+    width: 20%;
+}
+
+.img-GI img{
+    width: 40%;
+}
+
+.cuerpo-GI table{
+    width: 60%;
+    margin: 1%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.507);
+    align-items: center;
+    border: 2px solid black;
+}
+
+.cuerpo-GI th{
+    background-color: rgba(128, 128, 128, 0.774);
+}
+
+.cuerpo-GI th,td{
+    border: 2px solid black;
+    padding: 2%;
+}
+
+.more-inf{
+    color: white;
+    margin: 2% 1%;
+    background-color: rgba(31, 56, 45, 0.521);
+    border-radius: 15px;
+    width: 60%;
+}
+
+/* --------------- Rules ---------------- */ 
 
 .cuerpo-rules{
     display: flex;
@@ -144,226 +379,6 @@
     opacity: 100%;
 }
 
+/* >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<< */
 
-/* ------------------ Fondos ------------------- */
 
-.fondo-home{
-    background-image: url(../img/hockey_1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.fondo-about{
-    background-image: url(../img/hockey_2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.fondo-contact{
-    background-image: url(../img/hockey_3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-/* ------------------- logo ----------------- */
-
-.cuerpo img{
-    width: 300px;
-}
-.cuerpo-contact img{
-    margin-top: 3%;
-    margin-bottom: 5%;
-    width: 400px;
-}
-
-/*-------------------------- cuerpo carta ------------------*/
-
-.cuerpo-carta{
-    margin-right: 2%;
-    margin-bottom: 5%;
-    padding: 3%;
-    align-self: flex-end;
-    width: 40rem;
-    background-color: rgba(250, 235, 215, 0.747);
-    border: 2px solid black;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-}
-
-.cuerpo-carta>h3{
-    margin-left: 2%;
-    margin-top: 1%;
-    margin-bottom: 2%;
-    font-size: 35px;
-}
-
-.cuerpo-carta>p{
-    margin-left: 10%;
-    font-size: 25px;
-}
-
-/* ----------------- cuerpo about ----------------- */ 
-
-.cuerpo-about{
-    margin-left: 10%;
-    margin-bottom: 3%;
-    width: 45%;
-}
-
-.cuerpo-about>h3{
-    margin-top: 2%;
-    margin-left: 3%;
-    margin-bottom: 1%;
-    font-size: 30px;
-    text-shadow: 1px 2px #999;
-}
-
-.cuerpo-about>p{
-    text-indent: 5%;
-    margin-left: 5%;
-    font-size: 25px;
-    text-shadow: 1px 2px #999;
-}
-
-.cuerpo-img-about img{
-    width: 95%;
-    margin-left: 5%;
-    position: relative;
-    left: 5%;
-}
-
-/* ----------------- cuerpo contact -------------- */
-
-.cuerpo-contact h3{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 2%;
-    text-shadow: 1px 2px #999;
-}
-
-.cuerpo-contact p{
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 15%;
-    margin-top: 5%;
-    text-shadow: 1px 2px #999;
-}
-
-.mail{
-    width: 20%;
-}
-
-.mail img{
-    width: 20%;
-    margin-left: 40%;
-    opacity: 20%;
-}
-
-.mail img:hover{
-    width: 20%;
-    margin-left: 40%;
-    opacity: 100%;
-}
-
-/* ----------- footer ------------- */
-
-.footer{
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-}
-
-.footer-nav{
-    display: flex;
-    flex-direction: column;
-    margin-left: 2%;
-    flex-grow: 1;
-}
-
-.footer-nav a{
-    background-color: rgb(10, 98, 180);
-    width: 50%;
-    color: white;
-    text-decoration: none;
-    border: 1px solid black;
-    text-align: center;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-    transition: 2s;
-    margin: 0.5%;
-}
-.footer-nav a:hover{
-    background-color:  rgba(10, 98, 180, 0.356);
-} 
-
-.footer-politicas{
-    position: relative;
-    top: 2%;
-    left: 13%;
-    flex-grow: 1;
-    text-align: center;
-}
-.footer-politicas h3{
-    align-items: flex-end;
-    padding: 1%;
-}
-
-.footer-politicas a{
-    margin: 2%;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-
-.footer-politicas a:hover{
-    font-weight: bold;
-    margin: 2%;
-    color: red;
-    text-decoration: none;
-}
-
-.foot-cont-img{
-    width: 20%;
-}
-.foot-cont-img img{
-    position: relative;
-    left: 50%;
-    width: 30%;
-}
-
-.cuerpo-GI{
-    display: flex;
-    flex-direction: column;
-    background-image: url(../img/design1_image2.jpg);
-}
-
-.img-GI{
-    align-items: flex-end;
-    width: 20%;
-}
-
-.img-GI img{
-    position: relative;
-    left: 1200px;
-    width: 40%;
-}
-
-.cuerpo-GI table{
-    width: 60%;
-    margin: 1%;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.507);
-    align-items: center;
-    border: 2px solid black;
-}
-
-.cuerpo-GI th{
-    background-color: gray;
-}
-
-.cuerpo-GI th,td{
-    border: 2px solid black;
-    padding: 2%;
-}
