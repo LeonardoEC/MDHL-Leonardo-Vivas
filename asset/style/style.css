@@ -37,7 +37,7 @@
 
 .banner{
     width: 99.1vw;
-    max-height: 39vw;
+    max-height: 40vw;
 }
 
 /* -------------- nav-bar -------------- */
@@ -93,32 +93,53 @@
 
 .cuerpo-contact{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
+
 .cuerpo-rules{
     display: flex;
 }
 
+
 .cuerpo-rules h3{
-    margin: 3% 5%;
+    margin: 2% 5%;
 }
 
 .cuerpo-rules p, li{
-    margin: 3% 9%;
+    margin: 2% 9%;
     text-align: justify;
 }
 
 .container-img{
-    width: 60%;
+    display: flex;
+    align-content: center;
+    align-items: flex-end;
+    width: 30%;
     background-color: black;
 }
 .container-img img{
-    align-content: flex-end;
-    align-items: flex-end;
-    width: 80%;
+    width: 90%;
 }
+
+.back{
+    margin-bottom: 3%;
+    position: relative;
+    left: 50%;
+    width: 20%;
+}
+.back img{
+    width: 15%;
+    opacity: 20%;
+}
+
+.back img:hover{
+    width: 15%;
+    opacity: 100%;
+}
+
 
 /* ------------------ Fondos ------------------- */
 
@@ -247,20 +268,20 @@
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-around;
-    padding: 0.5%;
+    justify-content: space-between;
+    padding: 1%;
 }
 
 .footer-nav{
     display: flex;
     flex-direction: column;
+    margin-left: 2%;
     flex-grow: 1;
-    align-items: center;
 }
 
 .footer-nav a{
     background-color: rgb(10, 98, 180);
-    width: 80%;
+    width: 50%;
     color: white;
     text-decoration: none;
     border: 1px solid black;
@@ -274,10 +295,14 @@
 } 
 
 .footer-politicas{
-    flex-grow: 2;
+    position: relative;
+    top: 2%;
+    left: 13%;
+    flex-grow: 1;
     text-align: center;
 }
 .footer-politicas h3{
+    align-items: flex-end;
     padding: 1%;
 }
 
@@ -296,11 +321,10 @@
 }
 
 .foot-cont-img{
-    display: flex;
-    align-items: center;
     width: 20%;
 }
 .foot-cont-img img{
-    
-    width: 80%;
+    position: relative;
+    left: 50%;
+    width: 30%;
 }
