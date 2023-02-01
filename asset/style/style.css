@@ -79,8 +79,12 @@
     background-color: black;
     color: white;
     padding: 1%;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
+}
+
+.subtitulo p{
+    text-decoration: underline;
 }
 
 /* ------------------- Cuerpos ------------------ */
@@ -327,4 +331,39 @@
     position: relative;
     left: 50%;
     width: 30%;
+}
+
+.cuerpo-GI{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/design1_image2.jpg);
+}
+
+.img-GI{
+    align-items: flex-end;
+    width: 20%;
+}
+
+.img-GI img{
+    position: relative;
+    left: 1200px;
+    width: 40%;
+}
+
+.cuerpo-GI table{
+    width: 60%;
+    margin: 1%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.507);
+    align-items: center;
+    border: 2px solid black;
+}
+
+.cuerpo-GI th{
+    background-color: gray;
+}
+
+.cuerpo-GI th,td{
+    border: 2px solid black;
+    padding: 2%;
 }
