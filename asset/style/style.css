@@ -156,12 +156,10 @@
     color: white;
     display: flex;
     justify-content: space-around;
-    padding-top: 2%;
-    border: 2px solid green;
+    padding-top: 1%;
 }
 
 .footer-nav{
-    border: 2px solid gold;
     display: flex;
     flex-direction: column;
     width: 15%;
@@ -169,7 +167,6 @@
 }
 
 .foot-cont-img{
-    border: 2px solid red;
     width: 20%;
 
 }
@@ -181,7 +178,6 @@
 
 .footer-redes{
     width: 20%;
-    border: 2px solid blue;
     align-items: center;
     align-content: center;
     text-align: center;
@@ -190,18 +186,9 @@
     padding: 5%;
 }
 
-.footer-redes a{
+.footer-redes img{
+    width: 10%;
     margin: 2%;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-
-.footer-redes a:hover{
-    font-weight: bold;
-    margin: 2%;
-    color: red;
-    text-decoration: none;
 }
 
 
@@ -225,7 +212,7 @@
 
 .cuerpo-about{
     margin-left: 10%;
-    margin-bottom: 3%;
+    margin-bottom: 9%;
     width: 45%;
 }
 
