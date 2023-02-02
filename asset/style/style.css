@@ -22,21 +22,21 @@
     color: white;
     text-align: center;
     font-size: 50px;
-    color: yellow;
+    text-decoration: underline;
 }
 
 /* -------------- nav-bar -------------- */
 
 .navegador{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     position: sticky;
     top: 2%;
     margin-right: 2%;
 }
 
 .a-nav{
-    margin: 4px;
+    margin: 8px;
     background-color: rgb(10, 98, 180);
     color: white;
     text-decoration: none;
@@ -49,6 +49,8 @@
 
 .a-nav:hover{
     background-color:  rgba(10, 98, 180, 0.356);
+    transition: 1s;
+    transform: scale(1.5,1.5);
 }
 
 .activo{
@@ -56,6 +58,7 @@
 }
 .activo:hover{
     background-color: rgb(96, 158, 4);
+    transform: scale(1,1);
 }
 
 /* -------------- Banner ---------------- */
@@ -172,9 +175,10 @@
 }
 .foot-cont-img img{
     position: relative;
-    left: 30%;
+    left: 35%;
     width: 40%;
 }
+
 
 .footer-redes{
     width: 20%;
@@ -188,7 +192,12 @@
 
 .footer-redes img{
     width: 10%;
-    margin: 2%;
+    margin: 5%;
+}
+
+.footer-redes img:hover{
+    transition: 1s;
+    transform: scale(1.5,1.5);
 }
 
 
@@ -197,18 +206,6 @@
 /* >>>>>>>>>>>>>>>> Paginas <<<<<<<<<<<<<<<<< */
 
 /* ----------------- about ----------------- */ 
-
-.container-header-about{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-}
-
-.container-header-about img{
-    width: 15%;
-}
-
 
 .cuerpo-about{
     margin-left: 10%;
@@ -279,31 +276,23 @@
     opacity: 100%;
 }
 
-/* game-info */
+/* ----------------- game-info ---------------------- */
 
 .cuerpo-GI{
     display: flex;
+    justify-content: space-between;
     background-image: url(../img/design1_image2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.img-GI{
-    align-items: flex-end;
-    width: 20%;
-}
-
-.img-GI img{
-    width: 40%;
+    flex-wrap: wrap;
 }
 
 .cuerpo-GI table{
-    width: 60%;
-    margin: 1%;
+    margin: 5%;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.507);
-    align-items: center;
     border: 2px solid black;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 .cuerpo-GI th{
@@ -315,15 +304,18 @@
     padding: 2%;
 }
 
-.more-inf{
-    color: white;
-    margin: 2% 1%;
-    background-color: rgba(31, 56, 45, 0.521);
-    border-radius: 15px;
-    width: 60%;
+/* --------------- Rules ---------------- */ 
+
+.container-header-rules{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
 }
 
-/* --------------- Rules ---------------- */ 
+.container-header-rules img{
+    width: 15%;
+}
 
 .cuerpo-rules{
     display: flex;
