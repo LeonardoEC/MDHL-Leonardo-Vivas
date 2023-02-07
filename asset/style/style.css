@@ -405,12 +405,19 @@
 
 /* ------------------ Reistration ------------------- */
 
+.bg-reg{
+    background-image: url(../img/player.jpg);
+    background-position: center;
+}
+
 .container-col form{
     width: 70%;
     margin: auto;
     margin-top: 1%;
     margin-bottom: 1%;
     border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.692);
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -425,9 +432,22 @@ form > fieldset{
     align-content: start;
 }
 
+.container-row-2 legend{
+    margin-left: 1%;
+    font-size: 20px;
+}
+
+.container-row > legend{
+    margin: 1%;
+    font-size: 30px;
+    padding-right: 20%;
+    justify-content: space-between;
+    align-content: start;
+}
+
 .container-col > legend{
     margin: 1%;
-    font-size: 1.25em;
+    font-size: 30px;
     padding-right: 20%;
     justify-content: space-between;
     align-content: start;
@@ -447,18 +467,73 @@ form > fieldset{
     align-content: start;
 }
 
+.container-col input:hover{
+    transition: 1s;
+    transform: scale(1.05,1.05);
+
+}
+
 .container-col p{
     margin: 1%;
     font-size: 1.25em;
 }
 
 input{
+    background-color: rgba(255, 255, 255, 0);
     margin: auto;
     padding-left: 5%;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
+input:focus{
+    transition: 1s;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.reg-titulo{
+    font-weight: bolder;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.mini-titulo{
+    font-weight: bolder;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+form > button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background: rgb(158, 207, 130);
+    border: none;
+    border-radius: 15px;
+    padding: 1% 2%;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+form > button:hover{
+    background: rgb(99, 158, 64);
+    transition: 1s;
+    transform: scale(1.2,1.2);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.container-col > select{
+    font-weight: bold;
+    padding: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    width: 30%;
+    border: none;
+    background-color: rgba(240, 248, 255, 0.37);
+}
 
 /*
 
