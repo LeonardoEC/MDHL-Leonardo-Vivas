@@ -535,29 +535,6 @@ form > button:hover{
     background-color: rgba(240, 248, 255, 0.37);
 }
 
-/*
-
-filter: investigar 
-
-gap: se usa con flex box
-
-normalizar body: 100vh y 100vw
-
-tamaño de footer se usa: 5vh y 5vw resto es dependiendo de las
-medidades de los demas componentes(header - main)
-
-colocar los tamaños de cada elemento con el 100% de alto y ancho
-segun corresponda
-
-Object-fit: el boject fit es la propiedad de img como background size
-
-colocar siempre padding de 1 rem
-
-320px minimo
-
-*/
-
-
 
 /* >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<< */
 
