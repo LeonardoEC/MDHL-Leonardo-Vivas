@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../asset/style/style.css" />
-    <link
-      rel="shortcut icon"
-      href="../asset/img/Logo-Mighty-ducks-01.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="../asset/img/Logo-Mighty-ducks-01.ico" type="image/x-icon" />
     <title>Registration</title>
 </head>
+
 <body>
     <header>
         <div class="container-header">
@@ -34,103 +29,160 @@
         </div>
     </header>
     <main>
-        <section>
-            <h1>Registration Form</h1>
+        <section class="container-col">
+            <h1 class="subtitulo">Registration Form</h1>
             <form action="../test/show_data.html" method="get">
-                <fieldset>
-                    <label for="first_name">Players First Name: </label>
-                    <input type="text" name="first_name" id="first_name">
-                    <label for="last_name">Last Name: </label>
-                    <input type="text" name="last_name" id="last_name">
+                <!--Primera fila-->
+
+                <fieldset class="container-row">
+                    <label for="first_name">Players First Name:
+                        <input class="input-large" type="text" name="first_name" id="first_name">
+                    </label>
+                    <label for="last_name">Last Name:
+                        <input class="input-large" type="text" name="last_name" id="last_name">
+                    </label>
                 </fieldset>
-                <fieldset>
-                    <label for="">Street Address:</label>
-                    <input type="text" name="" id="">
+
+                <!--Segunda fila-->
+
+                <fieldset class="container-row">
+                    <label for="">Street Address:
+                        <input class="input-large" type="text" name="" id="">
+                    </label>
                 </fieldset>
-                <fieldset>
-                    <label for="">City:</label>
-                    <input type="text" name="" id="">
-                    <label for="">Zip Code:</label>
-                    <input type="text" name="" id="">
+
+                <!--Tercera fila-->
+
+                <fieldset class="container-row">
+                    <label for="">City:
+                        <input class="input-large" type="text" name="" id="">
+                    </label>
+                    <label for="">Zip Code:
+                        <input class="input-large" type="text" name="" id="">
+                    </label>
                 </fieldset>
-                <fieldset>
-                    <label for="">Brith Date</label>
-                    <input type="date" name="" id="">
-                    <label for="">Gender:</label>
-                    <label for="">Female</label>
-                    <input type="radio" name="" id="">
-                    <label for="">Male</label>
-                    <input type="radio" name="" id="">
+
+                <!--Cuarta fila-->
+                <fieldset class="container-row">
+                    <label for="">Brith Date:
+                        <input class="input-small" type="date" name="" id="">
+                    </label>
+                    <label for="Gender">Gender:</label>
+                    <label for="">
+                        <input type="radio" name="Gender" id="">Female
+                    </label>
+                    <label for="">
+                        <input type="radio" name="Gender" id="">Male
+                    </label>
                 </fieldset>
-                <fieldset>
+
+                <!--Quinta fila-->
+                <fieldset class=" container-row">
                     <label for="">Grade:</label>
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
+                    <input type="radio" name="Grade" id=""> Pre-School
+                    <input type="radio" name="Grade" id=""> 1th
+                    <input type="radio" name="Grade" id=""> 2th
+                    <input type="radio" name="Grade" id=""> 3th
+                    <input type="radio" name="Grade" id=""> 4th
+                    <input type="radio" name="Grade" id=""> 5th
                 </fieldset>
-                <fieldset>
+
+                <!--Sexta fila-->
+                <fieldset class="container-col">
                     <legend>Which elementary school do you live near?</legend>
-                    <label for="">Closest School</label>
-                    <label for=""></label>
-                    <input type="radio" name="" id="">
-                    <label for=""></label>
-                    <input type="radio" name="" id="">
-                    <label for=""></label>
-                    <input type="radio" name="" id="">
-                    <label for=""></label>
-                    <input type="radio" name="" id="">
-                    <label for=""></label>
-                    <input type="radio" name="" id="">
-                    <label for=""></label>
-                    <input type="radio" name="" id="">
+                    <label for="">Closest School:</label>
+                    <label for="">
+                        <input type="radio" name="" id="">AJ Katzenmaier
+                    </label>
+                    <label for="">
+                        <input type="radio" name="" id="">Greenbay
+                    </label>
+                    <label for="">
+                        <input type="radio" name="" id="">Howard A Yeager
+                    </label>
+                    <label for="">
+                        <input type="radio" name="" id="">Marjorie P Hart
+                    </label>
+                    <label for="">
+                        <input type="radio" name="" id="">North Elementary
+                    </label>
+                    <label for="">
+                        <input type="radio" name="" id="">Surth Elementary
+                    </label>
                 </fieldset>
-                <fieldset>
+
+                <!--Septima fila-->
+                <fieldset class="container-col">
                     <legend>What position(s) do you normally play? (check all that apply)</legend>
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
+                    <label for="">
+                        <input type="checkbox" name="" id=""> Foward
+                        <input type="checkbox" name="" id=""> Midfield
+                        <input type="checkbox" name="" id=""> Defense
+                        <input type="checkbox" name="" id=""> Goalkeeper
+                    </label>
                 </fieldset>
-                <fieldset>
+
+                <fieldset class="container-col">
                     <legend>Unform Size:</legend>
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
+                    <label for="">
+                        <input type="radio" name="" id=""> Youth Smal
+                        <input type="radio" name="" id=""> Youth Medium
+                        <input type="radio" name="" id=""> Youth Large
+                        <input type="radio" name="" id=""> Small
+                        <input type="radio" name="" id=""> Medium
+                        <input type="radio" name="" id=""> Large
+                        <input type="radio" name="" id=""> Extra-Large
+                    </label>
                 </fieldset>
-                <fieldset>
+
+                <fieldset class="container-col">
                     <legend>Permission to Play</legend>
-                    <p></p>
-                    <label for=""></label>
-                    <input type="text" name="" id="">
-                    <label for=""></label>
-                    <input type="text" name="" id="">
+                    <p>
+                        |, the parent or guardian of the minor registrant, agree that the registrant and | will abide by
+                        all the
+                        rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical
+                        injury
+                        associated with hockey and in consideration for the “League” accepting the registrant for its
+                        hockey programs and activities, | hereby release, discharge, and/or otherwise indemnify MDHL,
+                        their employees and associated personnel and volunteers,including the facilities used for
+                        practices and games, against any claim by or on behalf of the registrant as a result of the
+                        registrant's participation in the programand/orbeing transported to or from MDHL sponsored
+                        activities,which transportation
+                    </p>
+                    <label for="">
+                        Parent/GuardianSignature:
+                        <input type="text" name="" id="">
+                    </label>
+                    <label for="">
+                        Date
+                        <input type="date" name="" id="">
+                    </label>
                 </fieldset>
+                <button>submit</button>
             </form>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-nav">
+            <a class="a-nav" href="../index.html">Home</a>
+            <a class="a-nav" href="about.html">About</a>
+            <a class="a-nav" href="contact.html">Contact</a>
+            <a class="a-nav" href="game_info.html">Game info</a>
+            <a class="a-nav activo" href="rules-policies.html">Rules & Policies</a>
+            <a class="a-nav" href="registration.html">Registration</a>
+        </div>
+        <figure class="foot-cont-img">
+            <img class="" src="../asset/img/Logo_Mighty_ducks-01.png" alt="">
+        </figure>
+        <div class="footer-redes">
+            <h3>Social Media</h3>
+            <p>Follow us on our social networks, to be informed</p>
+            <figure>
+                <a href="(630)690-8192"><img src="../asset/img/mail.png" alt=""></a>
+                <a href="michael.randall@chihockey.org"><img src="../asset/img/phone.png" alt=""></a>
+            </figure>
+        </div>
+    </footer>
 </body>
+
 </html>

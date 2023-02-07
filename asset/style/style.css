@@ -7,6 +7,19 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+/* ---------------- container-genericos ---------------- */
+
+.container-row{
+    display: flex;
+}
+
+.container-col{
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* ---------------- container-header ---------------- */
 
 .container-header{
@@ -279,13 +292,19 @@
 
 /* ----------------- game-info ---------------------- */
 
+.bg-game-info{
+    background-image: url("../img/maps.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .cuerpo-GI{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-image: url(../img/design1_image2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    flex-wrap: wrap;
+    background-size: contain;
 }
 
 .cuerpo-GI table{
@@ -304,6 +323,31 @@
     border: 2px solid black;
     padding: 2%;
 }
+
+.container-maps{
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 3%;
+}
+
+.container-maps > .container-col{
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.507);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.container-maps > .container-col:hover{
+    background-color: rgba(255, 255, 255, 0.664);
+    transition: 1s;
+    transform: scale(1.2,1.2);
+}
+
+.container-maps > .container-col > h1{
+    margin-bottom: 5%;
+}
+
 
 /* --------------- Rules ---------------- */ 
 
@@ -358,6 +402,87 @@
     width: 15%;
     opacity: 100%;
 }
+
+/* ------------------ Reistration ------------------- */
+
+.container-col form{
+    width: 70%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+form > fieldset{
+    border: none;
+}
+
+.container-row label{
+    margin: 1%;
+    font-size: 1.25em;
+    justify-content: space-between;
+    align-content: start;
+}
+
+.container-col > legend{
+    margin: 1%;
+    font-size: 1.25em;
+    padding-right: 20%;
+    justify-content: space-between;
+    align-content: start;
+}
+
+.container-col label{
+    margin: 1%;
+    font-size: 1.25em;
+    justify-content: space-between;
+    align-content: start;
+}
+
+.container-col input{
+    margin: 1%;
+    font-size: 1.25em;
+    justify-content: space-between;
+    align-content: start;
+}
+
+.container-col p{
+    margin: 1%;
+    font-size: 1.25em;
+}
+
+input{
+    margin: auto;
+    padding-left: 5%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+
+/*
+
+filter: investigar 
+
+gap: se usa con flex box
+
+normalizar body: 100vh y 100vw
+
+tamaño de footer se usa: 5vh y 5vw resto es dependiendo de las
+medidades de los demas componentes(header - main)
+
+colocar los tamaños de cada elemento con el 100% de alto y ancho
+segun corresponda
+
+Object-fit: el boject fit es la propiedad de img como background size
+
+colocar siempre padding de 1 rem
+
+320px minimo
+
+*/
+
+
 
 /* >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<< */
 
